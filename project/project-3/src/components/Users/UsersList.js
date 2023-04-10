@@ -1,8 +1,9 @@
-import React from "react";
-import Card from "../components/UI/Card";
-import classes from "./UserList.module.css";
+import React from 'react';
 
-const UserList = (props) => {
+import Card from '../UI/Card';
+import classes from './UsersList.module.css';
+
+const UsersList = (props) => {
   return (
     <Card className={classes.users}>
       <ul>
@@ -16,4 +17,4 @@ const UserList = (props) => {
   );
 };
 
-export default UserList;
+export default UsersList;

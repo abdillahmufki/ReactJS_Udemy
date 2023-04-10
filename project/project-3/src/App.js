@@ -1,6 +1,7 @@
-import React, { useState } from "react";
-import AddUser from "./Users/AddUser";
-import UserList from "./Users/UserList";
+import React, { useState } from 'react';
+
+import AddUser from './components/Users/AddUser';
+import UsersList from './components/Users/UsersList';
 
 function App() {
   const [usersList, setUsersList] = useState([]);
@@ -13,11 +14,12 @@ function App() {
       ];
     });
   };
+
   return (
-    <>
+    <div>
       <AddUser onAddUser={addUserHandler} />
-      <UserList users={usersList} />
-    </>
+      <UsersList users={usersList} />
+    </div>
   );
 }
 
