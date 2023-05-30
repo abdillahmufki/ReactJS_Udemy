@@ -1,5 +1,4 @@
-import React from "react";
-import classes from "./MealsSumarry.module.css";
+import classes from './MealsSummary.module.css';
 
 const MealsSummary = () => {
   return (
